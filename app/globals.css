@@ -11,3 +11,40 @@
 .custom-btn {
   @apply p-2 px-3 outline-none;
 }
+
+/* login */
+.login__container {
+  @apply relative w-full h-screen flex justify-center items-center flex-wrap bg-gray-200;
+}
+
+.login__section {
+  @apply flex flex-row justify-center w-[80%] h-[85%] overflow-hidden rounded-[50px] bg-white shadow-[0_5px_30px_-10px_rgba(0,0,0,0.3)];
+}
+
+.login__leftContainer {
+  @apply min-w-0 h-full flex justify-center items-center basis-[50%];
+}
+
+.login__rightContainer {
+  @apply basis-[50%] min-w-0 hidden md:block;
+}
+
+.login__wrap {
+  @apply w-full text-center flex flex-col justify-center items-center;
+}
+
+.login__bgImage {
+  @apply bg-[url('/images/login.jpg')] w-full h-full bg-cover bg-center;
+}
+
+.login__social {
+  @apply w-[230px] lg:w-[300px] flex flex-col gap-3;
+}
+
+.login__button {
+  @apply flex gap-1 p-3 items-center justify-center rounded-lg w-full;
+}
+
+.login__title {
+  @apply uppercase text-[26px] leading-10;
+}

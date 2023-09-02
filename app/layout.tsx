@@ -2,6 +2,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import './globals.css'
 import type { Metadata } from 'next'
+import Provider from './Provider'
 
 
 export const metadata: Metadata = {
@@ -11,15 +12,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+
 }: {
   children: React.ReactNode
 }) {
   return (
     <html lang="kr">
       <body>
-        <Header />
-        {children}
-        <Footer />
+        <Provider>
+          <Header />
+          {children}
+          {/* <Footer /> */}
+        </Provider>
       </body>
     </html>
   )
