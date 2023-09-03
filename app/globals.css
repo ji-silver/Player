@@ -61,3 +61,11 @@ body {
 .hero__title {
   @apply lg:text-[30px] text-[20px] font-bold;
 }
+
+/* GameList */
+.gameList__container {
+  @apply flex flex-col items-center cursor-pointer;
+}
+.gameList__name {
+  @apply text-[14px] lg:text-[16px] text-center;
+}
