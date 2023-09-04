@@ -11,10 +11,6 @@ const Header = () => {
     const { data: session } = useSession();
     const router = useRouter();
 
-    useEffect(() => {
-        console.log(session?.user?.image)
-    }, [session])
-
     const handleButtonClick = () => {
         if (session) {
             if (window.confirm('로그아웃 하시겠습니까?')) {

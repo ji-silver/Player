@@ -9,3 +9,8 @@ export interface CustomButtonProps {
   icon?: boolean;
   children?: ReactNode;
 }
+
+export interface PostsProps {
+  title: string;
+  desc: string;
+}
