@@ -11,11 +11,17 @@ import {
 import app from './firebase'
 import { useEffect, useState } from 'react'
 import { PostsProps } from '@/type'
+import Posts from '@/components/Home/Posts'
 
 export default function Home() {
   const db = getFirestore(app);
 
   const [posts, setPosts] = useState<PostsProps[]>([]);
+
+
+  useEffect(() => {
+    getPost()
+  }, [])
 
   // fireStore doc data 가져오기
   const getPost = async () => {
@@ -26,9 +32,6 @@ export default function Home() {
     })
   }
 
-  useEffect(() => {
-    getPost()
-  }, [])
 
   return (
     <main>
@@ -37,6 +40,7 @@ export default function Home() {
         <Hero />
         <Search />
         <GameList />
+        {posts ? <Posts posts={posts} /> : null}
       </div>
       <Footer />
     </main>
