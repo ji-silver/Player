@@ -18,17 +18,16 @@ export default function Home() {
 
   const [posts, setPosts] = useState<PostsProps[]>([]);
 
-
   useEffect(() => {
     getPost()
-  }, [])
+  }, [doc])
 
   // fireStore doc data 가져오기
   const getPost = async () => {
     const querySnapshot = await getDocs(collection(db, "posts"))
     querySnapshot.forEach((doc) => {
       const data = doc.data() as PostsProps;
-      setPosts((posts) => [...posts, data])
+      setPosts((posts) => [...posts, { ...data, id: doc.id }])
     })
   }
 

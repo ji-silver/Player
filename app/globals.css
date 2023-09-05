@@ -69,3 +69,7 @@ body {
 .gameList__name {
   @apply text-[14px] lg:text-[16px] text-center;
 }
+
+.modal-box {
+  @apply max-w-[50rem];
+}

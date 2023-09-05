@@ -11,6 +11,7 @@ export interface CustomButtonProps {
 }
 
 export interface PostsProps {
+  id: string;
   title: string;
   desc: string;
   date: string;

@@ -6,7 +6,7 @@ import Image from 'next/image'
 const GameList = () => {
     return (
         <>
-            <div className='grid grid-cols-3 md:grid-cols-6 my-7 gap-5'>
+            <div className='grid grid-cols-3 md:grid-cols-6 my-7 gap-5 pb-10'>
                 {gameList.map((item) => (
                     <div className='gameList__container' key={item.id}>
                         <Image src={item.image} alt="sports" width={45} height={45} className='hover:animate-bounce transition-all duration-150' />
