@@ -19,3 +19,16 @@ export interface PostsProps {
   location: string;
   adress: string;
 }
+
+export interface FormData {
+  title: string;
+  desc: string;
+  location: string;
+  date: string;
+  time: string;
+  game: string;
+  file: File | null;
+  userName: string | null;
+  userImage: string | null;
+  email: string | null;
+}

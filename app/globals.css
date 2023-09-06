@@ -70,6 +70,27 @@ body {
   @apply text-[14px] lg:text-[16px] text-center;
 }
 
+/* CreatePost */
+.create__container {
+  @apply mt-5 md:max-w-3xl;
+}
+.create__wrap {
+  @apply bg-white rounded-xl p-5;
+}
+
+.create__title {
+  @apply text-[30px] font-bold;
+}
+
+/* Form */
+.form__title {
+  @apply font-bold pt-3;
+}
+
+.form__input {
+  @apply border rounded-lg p-2 mb-2;
+}
+
 .modal-box {
   @apply max-w-[50rem];
 }
