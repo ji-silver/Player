@@ -27,7 +27,7 @@ export interface FormData {
   date: string;
   time: string;
   game: string;
-  file: File | null;
+  image: string | null;
   userName: string | null;
   userImage: string | null;
   email: string | null;
